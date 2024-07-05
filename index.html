@@ -5,16 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1> Let's play Rock-Paper Scissor</h1>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <div>
-        <p>Your's points: <span id="playerPoints">0</span></p> 
-        <p>CPU's points: <span id ="cpuPoints">0</span></p>
+    <div class="topbar"> 
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="blackbar">
 
     </div>
+
+    <div class="wrapper">    
+           <div id="rules">
+            <h2>Make your choice!</h2>
+                <p id="subtitle"> The first who get 5 wins, win the game!</p>
+            </div> 
+            <div class="displayChoices">
+                <div class="choice"> 
+                    <img id="playerChoiceImg"src="./images/unown.png" alt="unown">
+                    <p id="playerPoints">You: 0</p> 
+                </div> 
+                <div class="choice"> 
+                    <img id="cpuChoiceImg"src="./images/unown.png" alt="unown">
+                    <p id="cpuPoints">CPU: 0</p> 
+                </div>
+            </div>             
+            <div class="selection">
+                <button class="choiceButton">
+                    <img id="rock" src="./images/bulbasaur.png" alt="Bulbasaur"></a>
+                </button>
+                <button class="choiceButton">
+                    <img id="paper" src="./images/charmander.png" alt="Charmander">
+                </button>
+                <button class="choiceButton">
+                    <img id="scissors" src="./images/squirtle.png" alt="Squirtle">
+                </button>
+            </div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="modalHeader">Header</h2>
+      </div>
+      <div class="modal-body">
+       <button id="restart"> Restart</button>
+      </div>
+</div>
 </body>
 </html>
